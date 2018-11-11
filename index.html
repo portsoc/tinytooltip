@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>TinyToolTip</title>
+<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<h1>Using CSS variables &amp; transforms for tooltips that track the mouse.</h1>
+<p>This page demonstrates the use of CSS Variables in creating tool-tips.  A feature of this approach is minimizing both additional page content and additional processing.</p>
+
+<p data-tip="This is a tooltip.">Each paragraph that looks like this has a tooltip.</p>
+
+<p data-tip="Tooltips are just text.">A single element is used to present the tooltip content.  This element is moved relative to the mouse pointer using a CSS3 transformation.  The transformation uses CSS variables that are initialised to (0,0) using css variables.  </p>
+
+<p data-tip="This is also a tooltip">Please hover over me (<span data-tip="Oh I say!">noticing that this text</span> in brackets has a different tooltip).</p>
+
+<p>NB: Tooltips don't work on mobile devices, so they're not a great cross platform interface mechanism, but this is an example of variables that is easy to unserstand on a desktop device.</p>

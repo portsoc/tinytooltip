@@ -1,0 +1,33 @@
+:root {
+    --top: 0;
+    --left: 0;
+}
+
+body {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+body>* {
+    padding: 1rem;
+}
+
+#tinytooltip {
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 0;
+    padding: 1vmin;
+    transform: translateX( calc(1vmin + var(--left))) translateY( calc(1vmin + var(--top)) );
+    border-radius: 1vmin;
+    background:rgb(66, 235, 0);
+    color: black;
+    border: black solid thin;
+}
+
+[data-tip] {
+    font-weight: bold;
+    background: rgba(66, 235, 0, 0.25);
+    border: rgba(0,0,0,0.25) solid thin;
+    border-radius: 1vmin;
+}
