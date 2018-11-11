@@ -6,6 +6,7 @@
 body {
     max-width: 30rem;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 
 body>* {
@@ -26,8 +27,7 @@ body>* {
 }
 
 [data-tip] {
-    font-weight: bold;
-    background: rgba(66, 235, 0, 0.25);
-    border: rgba(0,0,0,0.25) solid thin;
+    background: rgba(66, 235, 0, 0.1);
     border-radius: 1vmin;
 }
+
